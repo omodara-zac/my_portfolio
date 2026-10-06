@@ -1,16 +1,69 @@
-# React + Vite
+# Zaccheaus Omodara — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my skills, projects, education, experience, and contact information as a Software Engineer and Full-Stack Developer.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I am a Computer Science graduate with a strong interest in software engineering and full-stack development. This portfolio highlights some of the technologies I work with and the projects I have built.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React
+- JavaScript
+- HTML
+- CSS
+- Bootstrap
+- Vite
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js
+- Express.js
+- REST API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Database
+- PostgreSQL
+
+### Other Tools
+- Git
+- GitHub
+- VS Code
+
+## Features
+
+- Responsive portfolio website
+- About section
+- Skills section
+- Projects showcase
+- Education and experience sections
+- Contact form
+- PostgreSQL database for storing contact messages
+- Email notifications using Resend
+- Links to GitHub and LinkedIn
+- Downloadable resume
+
+## Project Structure
+
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── navbar.jsx
+│   │   ├── hero.jsx
+│   │   ├── about.jsx
+│   │   ├── skills.jsx
+│   │   ├── projects.jsx
+│   │   ├── experience.jsx
+│   │   ├── education.jsx
+│   │   ├── contact.jsx
+│   │   └── footer.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── backend/
+│   ├── server.js
+│   ├── db.js
+│   └── package.json
+├── index.html
+└── package.json
