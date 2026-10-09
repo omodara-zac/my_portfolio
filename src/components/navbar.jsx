@@ -11,7 +11,7 @@ const Navbar = () => {
         <a href="#contact">Contact</a>
 
         <a
-          href="/Zaccheaus_Ayodeji_Omodara_Resume.pdf"
+          href="/Zaccheaus_Omodara_Resume.pdf"
           target="_blank"
           rel="noreferrer"
         >
