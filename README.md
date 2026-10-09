@@ -1,16 +1,126 @@
-# React + Vite
+# Zaccheaus Omodara — Full-Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack developer portfolio built to showcase my skills, projects, education, experience, and contact information.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Frontend
 
-## React Compiler
+* React
+* JavaScript
+* HTML
+* CSS
+* Bootstrap
+* Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend
 
-## Expanding the ESLint configuration
+* Node.js
+* Express.js
+* REST API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Database
+
+* PostgreSQL
+
+### Email
+
+* Resend
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+
+## Features
+
+* Responsive portfolio website
+* Hero and About sections
+* Skills showcase
+* Projects section
+* Experience and Education sections
+* Downloadable resume
+* Contact form
+* PostgreSQL database for storing contact messages
+* Email notifications using Resend
+* GitHub, LinkedIn, WhatsApp, and email links
+
+## How It Works
+
+The frontend is built with React and handles the user interface and contact form.
+
+When a visitor submits the contact form, the data is sent to the Node.js/Express backend through a REST API.
+
+The backend:
+
+1. Receives the form data.
+2. Validates the submitted information.
+3. Stores the message in PostgreSQL.
+4. Sends an email notification using Resend.
+
+### Architecture
+
+```text
+React Frontend
+      ↓
+Express / Node.js API
+      ↓
+PostgreSQL Database
+      +
+Resend Email API
+```
+
+## Project Structure
+
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── navbar.jsx
+│   │   ├── hero.jsx
+│   │   ├── about.jsx
+│   │   ├── skills.jsx
+│   │   ├── projects.jsx
+│   │   ├── experience.jsx
+│   │   ├── education.jsx
+│   │   ├── contact.jsx
+│   │   └── footer.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── backend/
+│   ├── server.js
+│   ├── db.js
+│   └── package.json
+├── index.html
+└── package.json
+```
+
+## Running the Project
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+The backend requires environment variables for the PostgreSQL database and Resend API.
+
+## Author
+
+**Zaccheaus Omodara**
+
+* GitHub: https://github.com/omodara-Zac
+* LinkedIn: https://www.linkedin.com/in/omodara-zaccheaus-3b160a441
+* Email: [omodarazaccheaus@gmail.com](mailto:omodarazaccheaus@gmail.com)
