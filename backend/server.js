@@ -30,6 +30,7 @@ app.get("/api/test-db", async (req, res) => {
 
     res.status(500).json({
       message: "Database connection failed",
+      error: error.message,
     });
   }
 });
