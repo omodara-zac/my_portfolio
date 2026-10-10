@@ -35,6 +35,7 @@ const Skills = () => {
           <ul>
             <li>PostgreSQL</li>
             <li>SQL</li>
+            <li>Supabase</li>
           </ul>
         </div>
 
