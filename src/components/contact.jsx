@@ -16,35 +16,40 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("Sending message...");
 
-    try {
-fetch("https://zac-portfolio-api.onrender.com/api/contact", {
+  try {
+    const response = await fetch(
+      "https://zac-portfolio-api.onrender.com/api/contact",
+      {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        setStatus(data.message || "Something went wrong.");
       }
-    } catch (error) {
-      console.error(error);
-      setStatus("Unable to send message.");
+    );
+
+    const data = await response.json();
+
+    if (response.ok) {
+      setStatus("Message sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      setStatus(data.message || "Something went wrong.");
     }
-  };
+  } catch (error) {
+    console.error("Contact form error:", error);
+    setStatus("Unable to send message.");
+  }
+};
 
   return (
     <section className="contact" id="contact">
